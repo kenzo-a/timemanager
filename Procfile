@@ -1,1 +1,1 @@
-web: gunicorn file_app:app --log-file -
+web: gunicorn time_manager:app --log-file -
