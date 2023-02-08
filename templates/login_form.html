@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/pure-min.css">
+  <lind rel="stylesheet" href="static/style.css?v=a7">
+<body>
+  <div class="content">
+    <h1>時間を管理するツール</h1>
+</div></body></html>
+{% block contents %}
+  <div id="loginform">
+    <form action="/login/try" method="POST"
+     class="pure-form pure-form-aligned">
+  <legend>ログインしてください</legend>
+  <legend>(a, a でもログイン可能です)</legend>
+  <fieldset>
+    <div class="pure-control-group">
+      <label for="user">ユーザー名</label>
+      <input type="text" name="user" id="user"
+             placeholder="ユーザー名">
+    </div>
+    <div class="pure-control-group">
+      <label for="pw">パスワード</label>
+      <input type="password" name="pw" id="pw"
+             placeholder="パスワード">
+    </div>
+    <div class="pure-controls">
+      <button type="submit"
+       class="pure-button pure-button-primary">
+      ログイン</button>
+    </div>
+  </fieldset>
+  </form>
+  </div>
+{% endblock %}

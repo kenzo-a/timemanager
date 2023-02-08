@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/pure-min.css">
+  <link rel="stylesheet" href="static/style.css?v=a7">
+<body>
+  <div class="content">
+    <h1>時間を管理するツール</h1>
+  <div id="info">
+    <form action="/upload" method="POST"
+     enctype="multipart/form-data"
+     class="pure-form pure-form-stacked">
+      <fieldset>     
+      <legend>以下を入力してください</legend>
+      <div class="fblock">        
+        <label for="date">日付</label>
+        <select name="date" id="date">
+          <option value="1" selected>1日</option>
+          <option value="2">2日</option>
+          <option value="3">3日</option>
+          <option value="4">4日</option>
+          <option value="5">5日</option>
+          <option value="6">6日</option>
+          <option value="7">7日</option>
+          <option value="8">8日</option>
+          <option value="9">9日</option>
+          <option value="10">10日</option>
+          <option value="11">11日</option>
+          <option value="12">12日</option>
+          <option value="13">13日</option>
+          <option value="14">14日</option>
+          <option value="15">15日</option>
+          <option value="16">16日</option>
+          <option value="17">17日</option>
+          <option value="18">18日</option>
+          <option value="19">19日</option>
+          <option value="20">20日</option>
+          <option value="21">21日</option>
+          <option value="22">22日</option>
+          <option value="23">23日</option>
+          <option value="24">24日</option>
+          <option value="25">25日</option>
+          <option value="26">26日</option>
+          <option value="27">27日</option>
+          <option value="28">28日</option>
+          <option value="29">29日</option>
+          <option value="30">30日</option>
+          <option value="31">31日</option>
+        </select>
+        <label for="hour">時間</label>
+        <select name="hour" id="hour">
+          <option value="0" selected>0</option>
+          <option value="1">1時間</option>
+          <option value="2">2時間</option>
+          <option value="3">3時間</option>
+          <option value="4">4時間</option>
+          <option value="5">5時間</option>
+          <option value="6">6時間</option>
+          <option value="7">7時間</option>
+          <option value="8">8時間</option>
+          <option value="9">9時間</option>
+          <option value="10">10時間</option>
+        </select>
+        <label for="minute">分</label>
+        <select name="minute" id="minute">
+          <option value="0" selected>0</option>
+          <option value="5">5分</option>
+          <option value="10">10分</option>
+          <option value="15">15分</option>
+          <option value="20">20分</option>
+          <option value="25">25分</option>
+          <option value="30">30分</option>
+          <option value="35">35分</option>
+          <option value="40">40分</option>
+          <option value="45">45分</option>
+          <option value="50">50分</option>
+          <option value="55">55分</option>
+        </select>
+        <label for="action">行動</label>
+        <select name="action" id="action">
+          <option value="study">学習</option>
+          <option value="work">仕事(有効時間)</option>
+　　　　　<option value="usefulness">その他有効時間</option>
+          <option value="move">移動</option>
+          <option value="sleep">睡眠</option>
+          <option value="meal">食事</option>
+          <option value="TV">TV,GAME,YOUTUBE,etc...</option>
+          <option value="wasted time">その他無駄な時間</option>
+        </select>            
+      </div>
+      <button type="submit"
+              class="pure-button pure-button-primary">
+      登録する</button>
+      </fieldset>
+    </form>
+  <p><a href="/show">→→→→→表示する</a></p>
+  <p><a href="/logout">→ログアウト</a></p>
+</div></body></html>
+        
